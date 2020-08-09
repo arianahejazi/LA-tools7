@@ -48,7 +48,7 @@
 }
 
 .card-select:hover {
-    background: #ddd!important;
+    background: var(--light-gray-10)!important;
 }
 
   #answers{
