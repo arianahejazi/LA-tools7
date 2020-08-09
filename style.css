@@ -25,7 +25,8 @@
   #question-wrapper{
     background: var(--light-tifany)!important;
     border: 1px solid var(--light-gray-10)!important;
-    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+            box-shadow: none!important;
   }
 
   #question {
@@ -57,7 +58,8 @@
   
   .card{
     border: 1px solid var(--light-gray)!important;
-    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+            box-shadow: none!important;
     width: 295px!important;
     max-width: 135px!important;
     height: 61px!important;
@@ -158,7 +160,20 @@
           -ms-user-select: none;
               user-select: none;
       background: -o-linear-gradient(top, var(--white),var(--black));
-      background: -webkit-gradient(linear, left top, left bottom, from(var(--white),var(--black)));
+      background: -webkit-gradient(linear, left top, left bottom, from(var(--white)),to(var(--black)));
       background: linear-gradient(to bottom, var(--white),var(--black));
   }
-  
+  .example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
