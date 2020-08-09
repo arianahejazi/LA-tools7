@@ -69,7 +69,8 @@
 
   .resizeText{
       color: var(--light-black)!important;
-      padding: 10px!important;
+      padding: 10px 0!important;
+      font-size: 1em!important;
   }
 
   .checkBox {
