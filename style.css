@@ -39,6 +39,17 @@
     -ms-border-radius: 40px !important;
     -o-border-radius: 40px !important;
 }
+.card-select {
+    width: 30%!important;
+}
+
+.card-answer {
+    width: 62%!important;
+}
+
+.card-select:hover {
+    background: #ddd!important;
+}
 
   #answers{
     border-top: none!important;
